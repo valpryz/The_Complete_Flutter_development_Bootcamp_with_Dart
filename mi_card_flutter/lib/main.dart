@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -29,11 +30,57 @@ class MyApp extends StatelessWidget {
               Text(
                 'LEAD FRONTEND DEVELOPER',
                 style: TextStyle(
-                  color: Colors.grey[300],
+                  color: Colors.teal[100],
                   fontWeight: FontWeight.bold,
                   fontSize: 20.0,
-                  fontFamily: 'SourceSansPro-Italic',
+                  fontFamily: 'Source Sans Pro',
                   fontStyle: FontStyle.italic,
+                  letterSpacing: 1.0,
+                ),
+              ),
+              SizedBox(
+                height: 25.0,
+                width: 100.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+237 6 99 93 83 67',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.teal,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'valpryz@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.teal,
+                    ),
+                  ),
                 ),
               ),
             ],
