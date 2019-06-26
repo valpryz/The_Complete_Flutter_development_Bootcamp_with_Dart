@@ -9,7 +9,7 @@ class XylophoneApp extends StatelessWidget {
     player.play('note$thisNumber.wav');
   }
 
-  Expanded buildKey({color, number}) {
+  Expanded buildKey({Color color, int number}) {
     return Expanded(
       child: FlatButton(
         color: color,
